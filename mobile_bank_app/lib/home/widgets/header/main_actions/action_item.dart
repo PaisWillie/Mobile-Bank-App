@@ -27,7 +27,7 @@ class ActionItem extends StatelessWidget {
           label,
           style: const TextStyle(
             fontSize: 15,
-            fontFamily: 'Poppins',
+            fontFamily: 'Poppins-Medium',
             color: Colors.grey,
           ),
         ),

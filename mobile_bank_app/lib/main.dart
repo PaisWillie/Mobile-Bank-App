@@ -87,43 +87,49 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: SizedBox(
-        height: 125,
-        child: BottomNavigationBar(
-          elevation: 0,
-          showUnselectedLabels: true,
-          backgroundColor: const Color(0xFFF7F9FC),
-          unselectedItemColor: Colors.black26,
-          selectedLabelStyle: const TextStyle(
-            fontSize: 12,
-            fontFamily: 'Poppins',
+        height: 100,
+        child: Align(
+          alignment: Alignment.topCenter,
+          child: Padding(
+            padding: const EdgeInsets.only(top: 8.0),
+            child: BottomNavigationBar(
+              elevation: 0,
+              showUnselectedLabels: true,
+              backgroundColor: const Color(0xFFF7F9FC),
+              unselectedItemColor: Colors.black26,
+              selectedLabelStyle: const TextStyle(
+                fontSize: 12,
+                fontFamily: 'Poppins',
+              ),
+              unselectedLabelStyle: const TextStyle(
+                fontSize: 12,
+                fontFamily: 'Poppins',
+              ),
+              enableFeedback: false,
+              type: BottomNavigationBarType.fixed,
+              items: <BottomNavigationBarItem>[
+                _buildItem(
+                  iconData: Icons.home,
+                  label: 'Home',
+                ),
+                _buildItem(
+                  iconData: Icons.credit_card,
+                  label: 'Cards',
+                ),
+                _buildItem(
+                  iconData: Icons.map_outlined,
+                  label: 'Map',
+                ),
+                _buildItem(
+                  iconData: Icons.person_outline,
+                  label: 'Profile',
+                ),
+              ],
+              currentIndex: _selectedIndex,
+              selectedItemColor: Colors.black,
+              onTap: _onItemTapped,
+            ),
           ),
-          unselectedLabelStyle: const TextStyle(
-            fontSize: 12,
-            fontFamily: 'Poppins',
-          ),
-          enableFeedback: false,
-          type: BottomNavigationBarType.fixed,
-          items: <BottomNavigationBarItem>[
-            _buildItem(
-              iconData: Icons.home,
-              label: 'Home',
-            ),
-            _buildItem(
-              iconData: Icons.credit_card,
-              label: 'Cards',
-            ),
-            _buildItem(
-              iconData: Icons.map_outlined,
-              label: 'Map',
-            ),
-            _buildItem(
-              iconData: Icons.person_outline,
-              label: 'Profile',
-            ),
-          ],
-          currentIndex: _selectedIndex,
-          selectedItemColor: Colors.black,
-          onTap: _onItemTapped,
         ),
       ),
     );

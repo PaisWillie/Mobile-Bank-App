@@ -16,8 +16,7 @@ class Balance extends StatelessWidget {
             "\$2,589.00",
             style: TextStyle(
               fontSize: 36,
-              fontFamily: 'Poppins',
-              fontWeight: FontWeight.w600,
+              fontFamily: 'Poppins-Semibold',
               color: Colors.white,
             ),
           ),
@@ -26,7 +25,7 @@ class Balance extends StatelessWidget {
           "Available Balance",
           style: TextStyle(
             fontSize: 16,
-            fontFamily: 'Poppins',
+            fontFamily: 'Poppins-Medium',
             fontWeight: FontWeight.w500,
             color: Colors.grey,
           ),
