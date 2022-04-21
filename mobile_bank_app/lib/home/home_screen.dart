@@ -16,7 +16,7 @@ class HomeScreen extends StatelessWidget {
       ),
       parallaxEnabled: true,
       minHeight: 550,
-      maxHeight: 670,
+      maxHeight: 700,
       panel: const Panel(),
       body: const Header(),
     );

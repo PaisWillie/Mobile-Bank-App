@@ -20,6 +20,12 @@ class Panel extends StatelessWidget {
       amount: 589.00,
       expiryDate: DateTime(2022, 01),
     ),
+    BankCard(
+      cardType: "American Express",
+      lastFourDigits: 6949,
+      amount: 1249.23,
+      expiryDate: DateTime(2023, 03),
+    ),
   ];
 
   static List<Deposit> deposits = [
